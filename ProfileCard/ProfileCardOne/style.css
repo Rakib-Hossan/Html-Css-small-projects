@@ -19,6 +19,18 @@ body {
   box-shadow: 0 5px 10px gray;
   border-radius: 25px;
   padding: 25px;
+  position: relative;
+}
+
+.profileCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px 25px 0px 0px;
+  height: 35%;
+  width: 100%;
+  background-color: blueviolet;
 }
 /* profile image  */
 .image {
@@ -70,4 +82,26 @@ body {
   border-radius: 50%;
   text-decoration: none;
   background-color: blueviolet;
+}
+/* contact section */
+.contact {
+  margin-top: 15px;
+}
+.massage {
+  border-radius: 15px;
+  border: solid 3px blueviolet;
+  padding: 5px 15px;
+}
+.subBtn {
+  padding: 5px 15px;
+  border: solid 2px blueviolet;
+  border-radius: 15px;
+  color: whitesmoke;
+  background-color: blueviolet;
+  font-size: 16px;
+}
+.subBtn:hover {
+  background-color: whitesmoke;
+  color: blueviolet;
+  border: solid 2px blueviolet;
 }
