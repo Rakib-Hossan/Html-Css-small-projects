@@ -9,25 +9,89 @@ body {
   min-height: 100vh;
   background-color: whitesmoke;
 }
+/* profile card  */
 .profileCard {
   height: 470px;
   width: 350px;
   border: solid 2px blueviolet;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
+/* image sectioin  */
 .image {
-  height: 280px;
-  width: 280px;
+  height: 100%;
+  width: 100%;
   background-color: blueviolet;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
 }
 .profile-img {
   width: 250px;
+  border-radius: 50%;
+}
+
+/* profile information */
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+}
+.name {
+  font-size: 24px;
+  font-weight: 800;
+}
+.role {
+  font-size: 16px;
+  font-weight: 600;
+  color: blueviolet;
+}
+
+/* social media */
+.social {
+  font-size: 30px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 30px;
+  height: 34px;
+  width: 34px;
+  margin: 0 8px;
+  border-radius: 30%;
+  text-decoration: none;
+  background-color: blueviolet;
+  border: solid 2px blueviolet;
+}
+
+.social a:hover {
+  color: blueviolet;
+  background-color: whitesmoke;
+  border: solid 2px blueviolet;
+}
+
+.profileCard:hover .image {
+  top: -2%;
+  height: 280px;
+  width: 280px;
   border-radius: 50%;
 }
